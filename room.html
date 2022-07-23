@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sochi – Rooms</title>
+    <link rel="shortcut icon" href="assets/images/icon/icons8-palm-tree-48.png" type="image/x-icon">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&family=Krub:wght@300;400&family=Lobster&family=Montserrat:ital,wght@0,200;0,300;0,500;1,200;1,300;1,400&family=Nunito+Sans:wght@300;400&family=Oleo+Script:wght@400;700&family=Playfair+Display:ital@0;1&family=Poppins:wght@200;300;400&family=Roboto:wght@300&family=Source+Sans+Pro:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&family=Krub:wght@300;400&family=Lobster&family=Montserrat:ital,wght@0,200;0,300;0,500;1,200;1,300;1,400&family=Nunito+Sans:wght@300;400&family=Oleo+Script:wght@400;700&family=Playfair+Display:ital@0;1&family=Poppins:wght@200;300;400&family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <!-- datetime plugin -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/bootstrap/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/jquery-ui.theme.min.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/room/css/style.css">
+</head>
+
+<body>
+    <!-- preloader start -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- preloader end -->
+    <!-- back to top -->
+    <div class="back-to-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="top-btn">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- back to top -->
+    <!-- header start -->
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-3">
+                        <div class="nav-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo-black.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <div class="nav-menu">
+                            <div class="close">
+                                <input type="checkbox" id="check">
+                                <label for="check" class="checkbtn">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </label>
+                            </div>
+                            <ul class="m-0 p-0">
+                                <li><a class="active" href="room.html">Rooms</a></li>
+                                <li class="ms-4"><a href="gallery.html">Gallery</a></li>
+                                <li class="ms-4"><a href="about.html">About Us</a></li>
+                                <li class="ms-4"><a href="blog.html">Blog</a></li>
+                                <li class="ms-4"><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="rezerv">
+                            <ul class="d-flex m-0 p-0 justify-content-end">
+                                <li class="user"><a href="#"><i class="fa-solid fa-user-large"></i></a>
+                                    <div class="dropdown">
+                                        <ul class="m-0 p-0">
+                                            <li><a href="login.html"><i class="fa-solid fa-user"></i>Login</a></li>
+                                            <li><a href="register.html"><i class="fa-solid fa-user"></i>Register</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="ms-3 rezervation"><a href="#"><i
+                                            class="fa-regular fa-bookmark"></i>Reservations</a></li>
+                            </ul>
+                            <div class="bar d-none justify-content-end align-items-center">
+                                <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+        <!-- filters start -->
+        <section id="filter">
+            <div class="sub-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                            <div class="form-group d-flex">
+                                <div class="form-left">
+                                    <input type="datetime-local" readonly class="datetime" placeholder="Arrival Date">
+                                    <!-- <span class="calendar"></span> -->
+                                </div>
+                                <div class="form-right">
+                                    <input type="datetime-local" readonly class="datetime" placeholder="Departure Date">
+                                    <!-- <span class="calendar-2"></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                            <div class="form-group d-flex  justify-content-center">
+                                <div class="quantity-left d-flex">
+                                    <div>
+                                        <label for="">Adult:</label>
+                                    </div>
+                                    <div>
+                                        <span class="minus">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </span>
+                                        <input type="number" value="0" min="1" max="8" readonly>
+                                        <span class="plus">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="quantity-right d-flex ">
+                                    <div>
+                                        <label for="">Kids:</label>
+                                    </div>
+                                    <div>
+                                        <span class="minus">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </span>
+                                        <input type="number" value="0" min="1" max="8" readonly>
+                                        <span class="plus">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                            <div class="price">
+                                <div class="form-group d-flex justify-content-between align-items-center">
+                                    <label for="">Price Filter:</label>
+                                    <label for=""><i class="fa-solid fa-caret-down"></i></label>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="ui-slider">
+                                                <div id="slider-range"></div>
+                                                <p class="mb-0">
+                                                    <input type="text" id="amount" class="form-control" readonly>
+                                                    <div class="filter">
+                                                        <a href="#">Apply</a>
+                                                    </div>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- filters end -->
+        <!-- room start -->
+        <section id="room">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="title">
+                        <span>Rooms</span>
+                        <span> Suites.</span>
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="roomItem">
+                            <div class="img">
+                                <div class="popular">
+                                    <span>Popular</span>
+                                </div>
+                                <a href="#">
+                                    <img src="assets/images/roomItem/home/image_room_06.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h3>Comfort Room</h3>
+                                    <div class="price">
+                                        $89
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_01.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-maximize"></i>
+                                            925 sq.ft.
+                                        </div>
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-bed"></i>
+                                            2 Bedrooms
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_02.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center">
+                                            <div class="item-extended">
+                                                <i class="fa-solid fa-maximize"></i>
+                                                925 sq.ft.
+                                            </div>
+                                            <div class="item-extended">
+                                                <i class="fa-solid fa-bed"></i>
+                                                2 Bedrooms
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_03.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-maximize"></i>
+                                            925 sq.ft.
+                                        </div>
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-bed"></i>
+                                            2 Bedrooms
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_04.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-maximize"></i>
+                                            925 sq.ft.
+                                        </div>
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-bed"></i>
+                                            2 Bedrooms
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_05.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center">
+                                            <div class="item-extended">
+                                                <i class="fa-solid fa-maximize"></i>
+                                                925 sq.ft.
+                                            </div>
+                                            <div class="item-extended">
+                                                <i class="fa-solid fa-bed"></i>
+                                                2 Bedrooms
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_07.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-maximize"></i>
+                                            925 sq.ft.
+                                        </div>
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-bed"></i>
+                                            2 Bedrooms
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_08.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-maximize"></i>
+                                            925 sq.ft.
+                                        </div>
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-bed"></i>
+                                            2 Bedrooms
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_09.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center">
+                                            <div class="item-extended">
+                                                <i class="fa-solid fa-maximize"></i>
+                                                925 sq.ft.
+                                            </div>
+                                            <div class="item-extended">
+                                                <i class="fa-solid fa-bed"></i>
+                                                2 Bedrooms
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="img">
+                                <a href="#">
+                                    <div class="bg-color"></div>
+                                    <img src="assets/images/roomItem/image_room_10.jpg" alt="">
+                                </a>
+                                <div class="room-detail">
+                                    <h4>Grand Delux Room</h4>
+                                    <div class="price">
+                                        $129
+                                        <span>night</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="extended">
+                                    <div class="item-extended">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Adler
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-maximize"></i>
+                                            925 sq.ft.
+                                        </div>
+                                        <div class="item-extended">
+                                            <i class="fa-solid fa-bed"></i>
+                                            2 Bedrooms
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- room end -->
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="footer-left">
+                        <ul class="d-flex justify-content-start m-0 p-0">
+                            <li><a href="#">© 2019 Sochi Hotel</a></li>
+                            <li class="ms-4"><a href="#">Terms & Conditions</a></li>
+                            <li class="ms-4"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="footer-icon">
+                        <ul class="d-flex justify-content-end p-0 m-0">
+                            <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+                            <li class="ms-4"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="ms-4"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- plugin js -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="assets/bootstrap/js/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="assets/js/room/script.js"></script>
+</body>
+
+</html>

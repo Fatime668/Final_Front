@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sochi – Hotel Booking</title>
+    <link rel="shortcut icon" href="assets/images/icon/icons8-palm-tree-48.png" type="image/x-icon">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&family=Krub:wght@300;400&family=Lobster&family=Montserrat:ital,wght@0,200;0,300;0,500;1,200;1,300;1,400&family=Nunito+Sans:wght@300;400&family=Oleo+Script:wght@400;700&family=Playfair+Display:ital@0;1&family=Poppins:wght@200;300;400&family=Roboto:wght@300&family=Source+Sans+Pro:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&family=Krub:wght@300;400&family=Lobster&family=Montserrat:ital,wght@0,200;0,300;0,500;1,200;1,300;1,400&family=Nunito+Sans:wght@300;400&family=Oleo+Script:wght@400;700&family=Playfair+Display:ital@0;1&family=Poppins:wght@200;300;400&family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <!-- css plugin -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/apartment/css/style.css">
+</head>
+
+<body>
+    <!-- preloader start -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- preloader end -->
+    <!-- back to top -->
+    <div class="back-to-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="top-btn">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- back to top -->
+    <!-- header start -->
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-3">
+                        <div class="nav-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo-white.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <div class="nav-menu">
+                            <div class="close">
+                                <input type="checkbox" id="check">
+                                <label for="check" class="checkbtn">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </label>
+                            </div>
+                            <ul class="m-0 p-0">
+                                <li><a href="room.html">Rooms</a></li>
+                                <li class="ms-4"><a href="gallery.html">Gallery</a></li>
+                                <li class="ms-4"><a href="about.html">About Us</a></li>
+                                <li class="ms-4"><a href="blog.html">Blog</a></li>
+                                <li class="ms-4"><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="rezerv">
+                            <ul class="d-flex m-0 p-0 justify-content-end">
+                                <li class="user"><a href="#"><i class="fa-solid fa-user-large"></i></a>
+                                    <div class="dropdown">
+                                        <ul class="m-0 p-0">
+                                            <li><a href="login.html"><i class="fa-solid fa-user"></i>Login</a></li>
+                                            <li><a href="register.html"><i class="fa-solid fa-user"></i>Register</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="ms-3 rezervation"><a href="room.html"><i
+                                            class="fa-regular fa-bookmark"></i>Reservations</a></li>
+                            </ul>
+                            <div class="bar d-none justify-content-end align-items-center">
+                                <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+        <!-- intro start -->
+        <section id="intro">
+            <div class="bg-color"></div>
+            <div class="title">
+                <span class="subtitle">ROSA KHUTOR</span>
+                <h1>
+                    <span>Apartments</span>
+                </h1>
+            </div>
+            <a href="#panel" class="scroll-to">
+                Scroll
+                <span class="scroll-line"></span>
+            </a>
+        </section>
+        <!-- intro end -->
+        <section id="panel">
+            <div class="bottom-panel">
+                <div class="row m-0 p-0 common">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12  col-xl-8 p-0 m-0">
+                        <div class="row m-0 room-details">
+                            <div class="col-sm-4 col-md-4">
+                                <div class="detail-item">
+                                    <i class="fa-solid fa-maximize"></i>
+                                    <span>1500 sq.</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <div class="detail-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <span>4 Bed
+                                        rooms</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <div class="detail-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <span>2 Bath
+                                        room</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sticky-parent">
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p>Modern open plan super spacious penthouses in historic Sochi. Windows from floor
+                                    to
+                                    ceiling to give you the best views of Sochi and full view of majestic Table
+                                    Mountain
+                                    anywhere in the penthouse . The big patio with jacuzzi bath is ideal to watch
+                                    the
+                                    sunset
+                                    and the city lights. Coffee shops, museums, theatre within walking distance.
+                                    Separate
+                                    scullery/laundry & full open plan kitchen & shared pool.24 hour security and
+                                    indoor
+                                    parking included.</p>
+                            </div>
+                            <div class="amenity">
+                                <h3>Amenity</h3>
+                                <div class="row">
+                                    <ul class="col-12 col-sm-12 col-md-4 col-lg-4 list-feature">
+                                        <li><img src="assets/images/amenity/icon-parking.svg" alt="">
+                                            Free parking</li>
+                                        <li><img src="assets/images/amenity/icon-spa.svg" alt="">
+                                            SPA Services</li>
+                                        <li><img src="assets/images/amenity/icon-sport.svg" alt="">
+                                            Gym</li>
+                                        <li><img src="assets/images/amenity/icon-wifi.svg" alt="">
+                                            Fast Wi-Fi</li>
+                                    </ul>
+                                    <ul class="col-12 col-sm-12 col-md-4 col-lg-4 list-feature">
+                                        <li><img src="assets/images/amenity/icon-elevator.svg" alt="">
+                                            Elevator</li>
+                                        <li><img src="assets/images/amenity/icon-kitchen.svg" alt="">
+                                            Kitchen</li>
+                                        <li><img src="assets/images/amenity/icon-pool.svg" alt="">
+                                            Pool
+                                        </li>
+                                        <li><img src="assets/images/amenity/icon-tv.svg" alt="">
+                                            Cable TV</li>
+                                    </ul>
+                                    <ul class="col-12 col-sm-12 col-md-4 col-lg-4 list-feature">
+                                        <li><img src="assets/images/amenity/icon-coffee-maker.svg" alt="">
+                                            Coffee maker</li>
+                                        <li><img src="assets/images/amenity/icon-conditioner.svg" alt="">
+                                            Conditioning</li>
+                                        <li><img src="assets/images/amenity/icon-hair-dryer.svg" alt="">
+                                            Hair dryer
+                                        </li>
+                                        <li><img src="assets/images/amenity/icon-washer.svg" alt="">
+                                            Washer</li>
+                                    </ul>
+                                </div>
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="assets/images/apartment/image_room_05.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/apartment/image_room_06.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/apartment/image_room_07.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="title">
+                                        <h3>24 Reviews</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 progressBar">
+                                            <div class="label d-flex justify-content-between">
+                                                Comfort
+                                                <span>7.5</span>
+                                            </div>
+                                            <div class="progress-wrap">
+                                                <div class="progressbar" role="progressbar" aria-valuenow="75"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:75%; background-color: #C9A96A;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 progressBar">
+                                            <div class="label d-flex justify-content-between">
+                                                Food
+                                                <span>6.3</span>
+                                            </div>
+                                            <div class="progress-wrap">
+                                                <div class="progressbar" role="progressbar" aria-valuenow="63"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:63%; background-color: #C9A96A;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 progressBar">
+                                            <div class="label d-flex justify-content-between">
+                                                Facilities
+                                                <span>8.6</span>
+                                            </div>
+                                            <div class="progress-wrap">
+                                                <div class="progressbar" role="progressbar" aria-valuenow="86"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:86%; background-color: #C9A96A;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 progressBar">
+                                            <div class="label d-flex justify-content-between">
+                                                Location
+                                                <span>9.0</span>
+                                            </div>
+                                            <div class="progress-wrap">
+                                                <div class="progressbar" role="progressbar" aria-valuenow="90"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:90%; background-color: #C9A96A;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 progressBar">
+                                            <div class="label d-flex justify-content-between">
+                                                Staff
+                                                <span>9.2</span>
+                                            </div>
+                                            <div class="progress-wrap">
+                                                <div class="progressbar" role="progressbar" aria-valuenow="92"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:92%; background-color: #C9A96A;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 progressBar">
+                                            <div class="label d-flex justify-content-between">
+                                                Price-quality ratio
+                                                <span>7.6</span>
+                                            </div>
+                                            <div class="progress-wrap">
+                                                <div class="progressbar" role="progressbar" aria-valuenow="76"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:76%; background-color: #C9A96A;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class="testimonial-item">
+                                            <h4>Best hotel!</h4>
+                                            <p>The hotel has everything you need. On the ground floor there is a lobby
+                                                bar, on the second floor there is a zone with an indoor pool and sauna,
+                                                on the seventh floor there is a restaurant and spa-salon. The rooms are
+                                                cleaned every day.</p>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="img">
+                                                    <img src="assets/images/testimonial/person.jpg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="name">Jacob Lane</div>
+                                                    <div class="country">from USA</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-item">
+                                            <h4>Comfortable hotel.</h4>
+                                            <p>Well, what can I say, every year, day and hour, this place is being
+                                                transformed for the better. The staff is completely competent and
+                                                friendly, Everything around is blooming, pleasing, nourishing and making
+                                                the holiday bright.</p>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="img">
+                                                    <img src="assets/images/testimonial/person2.jpg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="name">Victoria Wilson</div>
+                                                    <div class="country">from France</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-item">
+                                            <h4>The modern.</h4>
+                                            <p>The modern 5 * Hotel Sochi Center is an ideal solution for combining
+                                                business and leisure. Stylish design and exceptional service will
+                                                satisfy the desires of any guest. 150 rooms with balcony (non-smoking),
+                                                sea view, trendy restaurant.</p>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="img">
+                                                    <img src="assets/images/testimonial/person3.jpg" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="name">Max Edwards</div>
+                                                    <div class="country">from Germany</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination">
+                                            <a href="#" class="prev"><i class="fa-solid fa-arrow-left"></i></a>
+                                            <div class="d-flex">
+                                                <a href="#" class="page active">1</a>
+                                                <a href="#" class="page">2</a>
+                                                <a href="#" class="page">3</a>
+                                                <span class="page">...</span>
+                                                <a href="#" class="page">10</a>
+                                            </div>
+                                            <a href="#" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 p-0 m-0">
+                        <div class="sidebar-booking">
+                            <div class="booking-price">
+                                <div class="title">Price</div>
+                                <div class="price">
+                                    $129
+                                    <span> night</span>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="check-in">Dates</label>
+                                    <div class="form-dual d-flex justify-content-center">
+                                        <div class="left-form">
+                                            <input type="datetime-local" id="check-in" placeholder="Select data">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="right-form">
+                                            <input type="datetime-local" id="check-out" placeholder="Select data">
+                                            <span class="icon"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 form-group">
+                                        <label for="person-adult">Adults</label>
+                                        <div class="quantity">
+                                            <span class="minus"></span>
+                                            <input type="number" id="person-adult" readonly min="1" max="8" value="0">
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 form-group">
+                                        <label for="person-kid">Kids</label>
+                                        <div class="quantity">
+                                            <span class="minus"></span>
+                                            <input type="number" id="person-kid" readonly min="1" max="8" value="0">
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1 rezervation">
+                                        <button type="submit" class="btn w-100">Reservations</button>
+                                    </div>
+                                    <div class="booking-note">
+                                        <span>Until you pay for anything</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- panel end -->
+        <!-- map start -->
+        <section id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.310664802465!2d109.19733871463704!3d12.22723189134728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317067663057facf%3A0xfab2a8d02e83c613!2sSochi%20Hotel%20Nha%20Trang!5e0!3m2!1sen!2s!4v1657999474383!5m2!1sen!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <!-- map end -->
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="footer-left">
+                        <ul class="d-flex justify-content-start m-0 p-0">
+                            <li><a href="#">© 2019 Sochi Hotel</a></li>
+                            <li class="ms-4"><a href="#">Terms & Conditions</a></li>
+                            <li class="ms-4"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="footer-icon">
+                        <ul class="d-flex justify-content-end p-0 m-0">
+                            <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+                            <li class="ms-4"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="ms-4"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- plugin js -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- script js -->
+    <script src="assets/js/apartment/script.js"></script>
+</body>
+
+</html>
